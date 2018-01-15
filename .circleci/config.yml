@@ -2,7 +2,7 @@ version: 2
 jobs:
 
   test:
-    working_directory: /go/src/github.com/alberii/lavender
+    working_directory: /go/src/github.com/makki0205/GAE-template/
     docker:
       - image: konojunya/rose
     steps:
@@ -22,7 +22,7 @@ jobs:
             - .
 
   deploy:
-    working_directory: /go/src/github.com/alberii/lavender
+    working_directory: /go/src/github.com/makki0205/GAE-template/
     docker:
       - image: konojunya/rose
     steps:
