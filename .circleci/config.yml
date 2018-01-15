@@ -34,6 +34,7 @@ jobs:
       - run:
           name: docker build
           command: make -f .circleci/ci.mk docker/build
+      - run: gcloud init
 #      - run:
 #          name: aws login
 #          command: make -f .circleci/ci.mk login
